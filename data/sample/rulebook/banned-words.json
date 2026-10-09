@@ -1,0 +1,5 @@
+{
+  "$comment": "Words that must never appear in customer-facing copy, per locale.",
+  "en": ["cheap", "bargain", "deal", "hurry", "limited time only", "best ever", "guaranteed", "must-have", "steal", "amazing"],
+  "ar": []
+}

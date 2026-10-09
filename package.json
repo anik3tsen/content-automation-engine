@@ -1,0 +1,25 @@
+{
+  "name": "content-automation-engine",
+  "version": "0.1.0",
+  "description": "Reference implementation of a brief-to-publish content automation pipeline: rules check facts, AI drafts copy, people approve at four gates.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/server/index.ts",
+    "dev": "tsx watch src/server/index.ts",
+    "demo": "tsx src/cli/demo.ts",
+    "reset": "tsx src/cli/reset.ts",
+    "test": "tsx --test --test-reporter=spec test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

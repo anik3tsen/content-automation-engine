@@ -1,0 +1,15 @@
+{
+  "$comment": "Brand fact cards. Owned by brand marketing. Only approved claims may appear in copy.",
+  "brands": [
+    {
+      "brandId": "brand-sample",
+      "name": "Sample Brand",
+      "approvedClaims": ["Made in Italy", "Small-batch production"],
+      "facts": {
+        "origin": "Italy",
+        "originAdjective": "Italian",
+        "craft": "small-batch"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$comment": "Sample request. Every value is a placeholder. launchAt is filled at run time (3 days ahead) when it is empty.",
+  "title": "Brand launch: debut knitwear collection",
+  "requester": "requester@example.com",
+  "brandId": "brand-sample",
+  "productIds": ["prod-001", "prod-002"],
+  "objective": "Introduce the brand's debut knitwear collection to existing customers",
+  "audience": "Customers who bought knitwear in the last 12 months",
+  "offer": "",
+  "keyMessage": "Small-batch knitwear in pure cashmere, made in Italy",
+  "tone": "brand-voice",
+  "cta": "Discover",
+  "channels": ["homepage", "crm_email", "social", "search_ad", "display_banner"],
+  "locales": ["en", "ar"],
+  "launchAt": "",
+  "landingUrl": "https://www.example.com/brands/sample-brand"
+}

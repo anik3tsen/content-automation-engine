@@ -1,0 +1,77 @@
+{
+  "$comment": "Channel specification library. One entry per output channel. limitSource is 'platform' when the limit is published by the platform, and 'assumed' when it must be confirmed against your own content model.",
+  "channels": [
+    {
+      "id": "homepage",
+      "label": "Homepage module",
+      "register": "editorial, calm",
+      "output": "content-store",
+      "variants": 3,
+      "ctaPolicy": "required",
+      "allowedCtas": ["Discover", "Explore the collection"],
+      "keywordLed": false,
+      "fields": [
+        { "name": "headline", "maxChars": 40, "required": true, "limitSource": "assumed" },
+        { "name": "line", "maxChars": 120, "required": true, "limitSource": "assumed" },
+        { "name": "cta", "maxChars": 24, "required": true, "limitSource": "assumed" }
+      ]
+    },
+    {
+      "id": "crm_email",
+      "label": "CRM email",
+      "register": "personal, short",
+      "output": "content-store",
+      "variants": 3,
+      "ctaPolicy": "required",
+      "allowedCtas": ["Shop the collection", "Discover"],
+      "keywordLed": false,
+      "fields": [
+        { "name": "subject", "maxChars": 45, "required": true, "limitSource": "assumed" },
+        { "name": "preheader", "maxChars": 90, "required": true, "limitSource": "assumed" },
+        { "name": "cta", "maxChars": 24, "required": true, "limitSource": "assumed" }
+      ]
+    },
+    {
+      "id": "social",
+      "label": "Social caption",
+      "register": "friendly, elevated",
+      "output": "creative-handoff",
+      "variants": 3,
+      "ctaPolicy": "soft",
+      "allowedCtas": [],
+      "keywordLed": false,
+      "fields": [
+        { "name": "caption", "maxChars": 150, "required": true, "limitSource": "assumed" }
+      ]
+    },
+    {
+      "id": "search_ad",
+      "label": "Responsive search ad",
+      "register": "clear, keyword-led",
+      "output": "ad-export",
+      "variants": 3,
+      "ctaPolicy": "none",
+      "allowedCtas": [],
+      "keywordLed": true,
+      "fields": [
+        { "name": "headline_1", "maxChars": 30, "required": true, "limitSource": "platform" },
+        { "name": "headline_2", "maxChars": 30, "required": true, "limitSource": "platform" },
+        { "name": "description", "maxChars": 90, "required": true, "limitSource": "platform" }
+      ]
+    },
+    {
+      "id": "display_banner",
+      "label": "Display banner",
+      "register": "short, confident",
+      "output": "creative-handoff",
+      "variants": 3,
+      "ctaPolicy": "required",
+      "allowedCtas": ["Discover", "Shop now"],
+      "keywordLed": false,
+      "fields": [
+        { "name": "headline", "maxChars": 25, "required": true, "limitSource": "assumed" },
+        { "name": "cta", "maxChars": 15, "required": true, "limitSource": "assumed" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "$comment": "Pipeline settings. Change behaviour here, not in code.",
+  "rollout": {
+    "$comment": "shadow: AI drafts are stored for comparison but hidden; people write as usual. assisted: people start from AI drafts. default: the new workflow is standard. The manual path stays open in every mode.",
+    "mode": "assisted",
+    "aiDrafting": true
+  },
+  "locales": {
+    "primary": "en",
+    "secondary": [
+      {
+        "code": "ar",
+        "label": "Arabic",
+        "direction": "rtl",
+        "$comment": "Secondary locales are transcreated by a native editor from the locked master brief, never from primary-locale drafts. AI assist is off by default and is the editor's choice.",
+        "aiAssist": false
+      }
+    ]
+  },
+  "drafting": {
+    "maxAutoRetries": 2,
+    "promptTemplate": "prompts/draft.v1.md"
+  },
+  "gates": {
+    "g1_accept_brief": { "label": "G1 Accept brief", "role": "content_project_lead" },
+    "g2_approve_primary": { "label": "G2 Approve primary copy", "role": "content_manager" },
+    "g3_approve_secondary": { "label": "G3 Approve secondary-locale copy", "role": "native_editor" },
+    "g4_publish": { "label": "G4 Publish", "role": "content_manager" }
+  },
+  "roles": {
+    "requester": "Requester",
+    "content_project_lead": "Content project lead",
+    "content_manager": "Content manager",
+    "native_editor": "Native editor",
+    "admin": "System owner"
+  },
+  "secondaryChecklist": [
+    "Register and forms of address are right for the audience",
+    "No cultural or religious sensitivity is broken",
+    "Key dates and occasions are respected",
+    "The meaning matches the locked master brief",
+    "The copy fits every character limit"
+  ],
+  "qa": {
+    "allowedLinkHosts": ["www.example.com", "example.com"],
+    "humanSampleSize": 2,
+    "lightEditThreshold": 0.2
+  },
+  "scheduling": {
+    "$comment": "Stage content this many hours before launch, so one tool outage cannot stop a campaign.",
+    "stageLeadHours": 48
+  },
+  "audit": {
+    "$comment": "During the first weeks, the secondary locale is audited at 100%. Then a sample.",
+    "secondaryFullAuditUntil": "2026-12-31"
+  }
+}

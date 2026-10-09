@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Content Automation Engine</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="bar">
+    <div class="brand">
+      <strong>Content Automation Engine</strong>
+      <span class="muted" id="mode"></span>
+    </div>
+    <div class="controls">
+      <label>Acting as
+        <select id="role"></select>
+      </label>
+      <label class="drill" title="Failure drill: switch the local content store off">
+        <input type="checkbox" id="outage"> Content store down
+      </label>
+      <button class="primary" id="new">New request</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside>
+      <h2>Requests</h2>
+      <ul id="jobs" class="jobs"></ul>
+    </aside>
+    <section id="view" class="view">
+      <div class="empty">
+        <h1>One brief, every placement</h1>
+        <p>Rules check the facts. AI drafts the copy. People approve everything customers see, at four gates.</p>
+        <p>Select <b>New request</b> to start, or run <code>npm run demo -- --scenario all</code> to fill this list.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="brief-dialog">
+    <form id="brief-form" method="dialog"></form>
+  </dialog>
+
+  <div id="toast" class="toast" hidden></div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

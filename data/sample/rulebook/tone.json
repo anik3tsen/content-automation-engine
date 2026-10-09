@@ -1,0 +1,24 @@
+{
+  "$comment": "Tone rulebook. Editors own it. The secondary-locale section is written by native editors only.",
+  "profiles": {
+    "brand-voice": {
+      "en": {
+        "do": [
+          "Write with calm confidence",
+          "Lead with craft and material",
+          "Use short, clear sentences"
+        ],
+        "dont": [
+          "Use urgency or discount language",
+          "Use exclamation marks",
+          "Use words in capital letters for emphasis"
+        ]
+      },
+      "ar": {
+        "$comment": "Native editors write this section: register, forms of address, cultural and religious sensitivities, key dates.",
+        "do": [],
+        "dont": []
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "$comment": "Material lexicon. Any of these words in copy must also be in the product record, or the claim check blocks the copy.",
+  "materials": ["silk", "cashmere", "wool", "merino", "cotton", "linen", "leather", "suede", "denim", "velvet", "satin", "nylon", "polyester", "viscose", "alpaca", "mohair", "gold", "silver", "platinum", "diamond", "pearl"]
+}

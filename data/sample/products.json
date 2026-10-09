@@ -1,0 +1,27 @@
+{
+  "$comment": "Stand-in for the product catalogue. Facts in copy are inserted from these records, never generated.",
+  "products": [
+    {
+      "id": "prod-001",
+      "brandId": "brand-sample",
+      "name": "Roll-neck sweater",
+      "category": "knitwear",
+      "materials": ["cashmere"],
+      "composition": "100% cashmere",
+      "price": { "amount": 495, "currency": "USD" },
+      "url": "https://www.example.com/p/prod-001",
+      "available": true
+    },
+    {
+      "id": "prod-002",
+      "brandId": "brand-sample",
+      "name": "Long cardigan",
+      "category": "knitwear",
+      "materials": ["cashmere"],
+      "composition": "100% cashmere",
+      "price": { "amount": 620, "currency": "USD" },
+      "url": "https://www.example.com/p/prod-002",
+      "available": true
+    }
+  ]
+}
